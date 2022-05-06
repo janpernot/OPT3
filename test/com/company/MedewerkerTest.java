@@ -18,7 +18,7 @@ class MedewerkerTest {
 
         WinstPeriode testWinstPeriode = new WinstPeriode("10 maanden", "1", testOmzetPost, testKostenPost);
         Medewerker jan = new Medewerker("Jan Pernot", 0.4);
-
+//getUitbetaling voert een berekening uit
         assertEquals(1920, jan.getUitbetaling(testWinstPeriode));
     }
 }
