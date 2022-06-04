@@ -10,6 +10,7 @@ public class WinstPeriode {
     private double winst;
     private static double totaleWinst;
 
+
     WinstPeriode(String periode, String periodeNummer, OmzetPost omzetPost, KostenPost kostenPost) {
         this.periode = periode;
         this.periodeNummer = periodeNummer;

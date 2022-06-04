@@ -6,11 +6,13 @@ public class Factuur {
     private String factuurNummer;
     private double factuurBedrag;
     private String factuurDatum;
+    private String munteenheid;
 
-    public Factuur(String factuurNummer, double factuurBedrag, String factuurDatum) {
+    public Factuur(String factuurNummer, double factuurBedrag, String factuurDatum, String munteenheid) {
         this.factuurNummer = factuurNummer;
         this.factuurBedrag = factuurBedrag;
         this.factuurDatum = factuurDatum;
+        this.munteenheid = munteenheid;
     }
 
     public double getFactuurBedrag() {
@@ -23,6 +25,10 @@ public class Factuur {
 
     public String getFactuurDatum() {
         return factuurDatum;
+    }
+
+    public String getMunteenheid(){
+        return munteenheid;
     }
 
 }

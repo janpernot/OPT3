@@ -2,10 +2,11 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Medewerker {
+public class Medewerker implements Observer {
     private String naam;
     private double winstpercentageKommaGetal;
     private ArrayList<WinstPeriode> alleWinstPeriodesPerMedewerker = new ArrayList<>();
+
 
     Medewerker(String naam, double winstpercentageKommaGetal) {
         this.naam = naam;

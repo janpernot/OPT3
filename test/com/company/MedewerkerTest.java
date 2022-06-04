@@ -13,7 +13,7 @@ class MedewerkerTest {
         Bestelling testBestelling = new Bestelling("1", testDealer, 40, 145, "5 mei", true, true);
         OmzetPost testOmzetPost = new OmzetPost("1 januari - 4 mei", "1", testBestelling);
 
-        Factuur testFactuur = new Factuur("1", 1000, "10 januari");
+        Factuur testFactuur = new Factuur("1", 1000, "10 januari", Munteenheid.getInstance().getCanadianDollar());
         KostenPost testKostenPost = new KostenPost("3 maanden", "1", testFactuur);
 
         WinstPeriode testWinstPeriode = new WinstPeriode("10 maanden", "1", testOmzetPost, testKostenPost);

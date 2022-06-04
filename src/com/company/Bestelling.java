@@ -1,6 +1,8 @@
 package com.company;
 
-public class Bestelling {
+import java.util.ArrayList;
+
+public class Bestelling{
     private String bestelNummer;
     private AutoDealer autoDealer;
     private int aantalLeads;
@@ -43,10 +45,6 @@ public class Bestelling {
         return bestellingBetaald;
     }
 
-    public void printBestellingDatum() {
-        System.out.println("De datum waarop deze bestelling werd geplaatst was " + bestellingDatum + ".");
-    }
-
     public double getBestellingPrijsperLead() {
         return prijsPerLead;
     }
@@ -57,6 +55,7 @@ public class Bestelling {
 
     public void setBestellingVoltooid() {
         bestellingVoltooid = true;
+
     }
 
     public String getBestellingDatum() {
@@ -69,6 +68,10 @@ public class Bestelling {
 
     public String getBestelNummer() {
         return bestelNummer;
+    }
+
+    public void setBestellingLeadPrijs(double prijs){
+        this.prijsPerLead = prijs;
     }
 
     public boolean magBestellingWordenToegevoegd(Boolean isEerderToegevoegd ){

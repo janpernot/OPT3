@@ -3,8 +3,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-//        AutoDealer Chilliwack = new AutoDealer("Chilliwack", "British-Columbia", "Vancouver", "testAddress", "a1a1a1", "testEigenaar", "chilliwack@gmail.com", "2152534617");
-//        Bestelling bestelling1 = new Bestelling("1", Chilliwack, 1, 100, "4 mei", false, false);
+        AutoDealer Chilliwack = new AutoDealer("Chilliwack", "British-Columbia", "Vancouver", "testAddress", "a1a1a1", "testEigenaar", "chilliwack@gmail.com", "2152534617");
+        Bestelling bestelling1 = new Bestelling("1", Chilliwack, 1, 100, "4 mei", false, false);
 //        Bestelling bestelling2 = new Bestelling("2", Chilliwack, 1, 80, "4 mei", false, false);
 //
 //        Factuur factuur1 = new Factuur("1", 5, "5 mei");
@@ -30,9 +30,11 @@ public class Main {
 //        jan.addAlleWinstPeriodes(winstPeriode1);
 //        jan.addAlleWinstPeriodes(winstPeriode2);
 //        jan.printAlleUitbetalingen();
-
+        BepaalBasisPrijs test1 = new PrijsAlberta("Rocky Mountains", 20, bestelling1);
+        test1.templateMethod();
+        System.out.println(bestelling1.getBestellingPrijsperLead());
+        }
 
     }
-}
 
 
