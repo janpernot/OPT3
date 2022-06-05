@@ -15,7 +15,4 @@ public class Munteenheid {
     public String getCanadianDollar(){
         return "Canadian Dollar";
     }
-    public String getUSDollar(){
-        return "United States Dollar";
-    }
 }

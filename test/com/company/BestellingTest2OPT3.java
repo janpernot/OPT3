@@ -9,7 +9,7 @@ class BestellingTest2OPT3 {
     @Test
     void bijwelkeProvincieHoortbestelling() {
 //        Equivalentieklassen en Randwaarden
-        AutoDealer testautodealer = new AutoDealer("testnaam", "BC", "teststad", "testadres", "1234", "testnaameigenaar", "test@gmail.com", "11111");
+        AutoDealer testautodealer = new AutoDealer("testnaam", "BC", "teststad", "testadres", "1234", "test@gmail.com", "11111");
         Bestelling bestelling1 = new Bestelling("4", testautodealer, 35, 120, "7 april", false, true);
         Bestelling bestelling2 = new Bestelling("4", testautodealer, 35, 121, "7 april", false, true);
         Bestelling bestelling3 = new Bestelling("4", testautodealer, 35, 124, "7 april", false, true);

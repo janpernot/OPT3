@@ -12,17 +12,15 @@ public class AutoDealer {
     private String stad;
     private String adres;
     private String postcode;
-    private String eigenaarNaam;
     private String dealerEmail;
     private String dealerTelefoon;
 
-    public AutoDealer(String dealerNaam, String provincie, String stad, String adres, String postcode, String eigenaarNaam, String dealerEmail, String dealerTelefoon) {
+    public AutoDealer(String dealerNaam, String provincie, String stad, String adres, String postcode, String dealerEmail, String dealerTelefoon) {
         this.dealerNaam = dealerNaam;
         this.provincie = provincie;
         this.stad = stad;
         this.adres = adres;
         this.postcode = postcode;
-        this.eigenaarNaam = eigenaarNaam;
         this.dealerEmail = dealerEmail;
         this.dealerTelefoon = dealerTelefoon;
     }
@@ -35,8 +33,12 @@ public class AutoDealer {
         return dealerEmail;
     }
 
+    public String getDealerNaam() {
+        return dealerNaam;
+    }
+
     public void printDealerInfo() {
-        String dealerInformatie = ("De informatie van " + dealerNaam + " is:\nProvincie: " + provincie + "\nStad: " + stad + "\nPostcode: " + postcode + "\nNaam van eigenaar: " + eigenaarNaam + "\nTelefoonnummer: " + dealerTelefoon + "\nEmail: " + dealerEmail);
+        String dealerInformatie = ("De informatie van " + dealerNaam + " is:\nProvincie: " + provincie + "\nStad: " + stad + "\nPostcode: " + postcode + "\nTelefoonnummer: " + dealerTelefoon + "\nEmail: " + dealerEmail);
         System.out.println(dealerInformatie);
     }
 
@@ -48,7 +50,4 @@ public class AutoDealer {
         this.dealerTelefoon = x;
     }
 
-    public String getDealerNaam() {
-        return dealerNaam;
-    }
 }
