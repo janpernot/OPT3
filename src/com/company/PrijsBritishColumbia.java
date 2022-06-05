@@ -17,7 +17,7 @@ public class PrijsBritishColumbia extends BepaalBasisPrijs{
         }
     }
     @Override
-    public void checkTijdsbestek(){
+    public void checkTijdsBestek(){
         if (getMaximaalTijdsBestekInDagen() <= 5){
             System.out.println(getMaximaalTijdsBestekInDagen() + " is heel kort in British Columbia om een bestelling te kunnen voltooien. Hiervoor moet veel meer worden uitgegeven.\nDe prijs per lead is verhoogd met 10%.\nJe kan nu checken of er nog extra kosten boven op de leadprijs komen.");
             veranderBasisPrijs(1.1);

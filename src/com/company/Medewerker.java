@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Medewerker implements Observer {
+public class Medewerker{
     private String naam;
     private double winstpercentageKommaGetal;
     private ArrayList<WinstPeriode> alleWinstPeriodesPerMedewerker = new ArrayList<>();

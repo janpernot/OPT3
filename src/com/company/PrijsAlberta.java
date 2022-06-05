@@ -23,7 +23,7 @@ public class PrijsAlberta extends BepaalBasisPrijs{
         }
     }
     @Override
-    public void checkTijdsbestek(){
+    public void checkTijdsBestek(){
         if (getMaximaalTijdsBestekInDagen() <= 15){
             System.out.println(getMaximaalTijdsBestekInDagen() + " is heel kort in Alberta om een bestelling te kunnen voltooien. Hiervoor moet veel meer worden uitgegeven.\nDe prijs per lead is verhoogd met 15%.\nJe kan nu checken of er nog extra kosten boven op de leadprijs komen.");
             veranderBasisPrijs(1.15);
