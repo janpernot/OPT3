@@ -54,13 +54,12 @@ kunnen opvragen zodat ik die berekening niet meer handmatig hoef uit te voeren. 
         UitbetalingMedewerker uitbetalingenVanJan = new UitbetalingMedewerker(jan);
 
         System.out.println("De uitbetaling is: " +uitbetalingenVanJan.getUitbetaling(winstPeriode1));
+        System.out.println("");
 
 
-/*Als CTO wil ik op basis van een regio kijken of de prijs nog moet worden aangepast binnen de Regio (template method pattern) */
+/*Als CTO wil ik op basis van een regio kijken of de prijs nog moet worden aangepast binnen de Regio zodat ik een accurate leadprijs kan bepalen (template method pattern) */
     BepaalBasisPrijs test = new PrijsSaskatchewan("Far North West", 20, bestelling1);
     test.bepaalBasisPrijs();
-
-
     }
 }
 
