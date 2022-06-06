@@ -11,13 +11,13 @@ public abstract class BepaalBasisPrijs {
         this.bestelling = bestelling;
     }
 
-    public void templateMethod(){
+    public void bepaalBasisPrijs(){
         checkRegio();
         checkTijdsBestek();
     }
 
-    public void checkRegio(){}
-    public void checkTijdsBestek(){}
+    public abstract void checkRegio();
+    public abstract void checkTijdsBestek();
 
     public String getRegio(){
         return regio;

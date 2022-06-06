@@ -21,14 +21,14 @@ terug kan vinden doordat het niet meer in een ongestructureerde sheet staat. */
 zodat ik deze kan beheren in het programma. */
 
         Bestelling bestelling1 = new Bestelling("1", Chilliwack, 40, 145, "Zondag 5 juni", true, true);
-        Bestelling bestelling2 = new Bestelling("1", Chilliwack, 30, 145, "Zondag 30 juni", true, true);
+        Bestelling bestelling2 = new Bestelling("2", Chilliwack, 30, 145, "Zondag 30 juni", true, true);
         System.out.println("mag bestelling worden toegevoegd: " +bestelling1.magBestellingWordenToegevoegd(false));
         System.out.println("Op basis van de prijs per lead hoort de bestelling bij: " +bestelling1.bijwelkeProvincieHoortbestelling());
         System.out.println("De vermenigvuldiger van de nieuwe leadprijs bedraagd: " +bestelling1.welOfGeenKorting(500000, true,true));
         System.out.println("");
 
 /* Als CTO wil ik een factuur kunnen toevoegen met de juiste
-munteenheid zodat ik de kosten goed in kaart kan brengen. */
+munteenheid zodat ik de kosten goed in kaart kan brengen (Singleton pattern). */
 
         Factuur factuur1 = new Factuur("1", 1000, "Zondag 5 juni", Munteenheid.getInstance().getCanadianDollar());
         Factuur factuur2 = new Factuur("2", 1500, "Zondag 30 juni", Munteenheid.getInstance().getCanadianDollar());
@@ -56,6 +56,9 @@ kunnen opvragen zodat ik die berekening niet meer handmatig hoef uit te voeren. 
         System.out.println("De uitbetaling is: " +uitbetalingenVanJan.getUitbetaling(winstPeriode1));
 
 
+/*Als CTO wil ik op basis van een regio kijken of de prijs nog moet worden aangepast binnen de Regio (template method pattern) */
+    BepaalBasisPrijs test = new PrijsSaskatchewan("Far North West", 20, bestelling1);
+    test.bepaalBasisPrijs();
 
 
     }
