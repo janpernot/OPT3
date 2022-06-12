@@ -8,7 +8,7 @@ class BestellingTest3OPT3 {
 
     @Test
     void welOfGeenKorting() {
-        AutoDealer testautodealer = new AutoDealer("testnaam", "BC", "teststad", "testadres", "1234", "test@gmail.com", "11111");
+        AutoDealer testautodealer = new AutoDealer("testnaam", "BC", "teststad", "testadres", "1234");
         Bestelling bestelling1 = new Bestelling("1", testautodealer, 25, 120, "7 april", false, true);
         Bestelling bestelling2 = new Bestelling("1", testautodealer, 25, 120, "7 april", false, true);
         Bestelling bestelling3 = new Bestelling("1", testautodealer, 35, 120, "7 april", false, true);

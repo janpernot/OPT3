@@ -9,7 +9,7 @@ class MedewerkerTest {
     @Test
     void testGetUitbetaling() {
 //        er worden meerdere objecten aangemaakt omdat deze nodig zijn om een WinstPeriode aan te maken (zie line 19)
-        AutoDealer testDealer = new AutoDealer("testDealer", "BC", "vancouver", "testaddress", "a1a1as1", "testemail@gmail.com", "2152534617");
+        AutoDealer testDealer = new AutoDealer("testDealer", "BC", "vancouver", "testaddress", "a1a1as1");
         Bestelling testBestelling = new Bestelling("1", testDealer, 40, 145, "5 mei", true, true);
         OmzetPost testOmzetPost = new OmzetPost("1 januari - 4 mei", "1", testBestelling);
 

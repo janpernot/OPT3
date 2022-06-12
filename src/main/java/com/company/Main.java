@@ -9,11 +9,9 @@ public class Main {
 informatie zoals adres en contactinformatie zodat ik deze informatie ten alle tijden eenvoudig
 terug kan vinden doordat het niet meer in een ongestructureerde sheet staat. */
 
-        AutoDealer Chilliwack = new AutoDealer("Chilliwack Mitsubishi", "British-Columbia", "Vancouver", "address", "a1a1a1", "chilliwack@gmail.com", "2152534617");
+        AutoDealer Chilliwack = new AutoDealer("Chilliwack Mitsubishi", "British-Columbia", "Vancouver", "address", "a1a1a1");
 
         System.out.println("De naam van de dealer is " + Chilliwack.getDealerNaam());
-        System.out.println("De email van de dealer is " + Chilliwack.getDealerEmail());
-        System.out.println("Het telefoonnummer van de dealer is " +Chilliwack.getDealerTelefoon());
         Chilliwack.printDealerInfo();
         System.out.println("");
 

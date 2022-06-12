@@ -9,7 +9,7 @@ class WinstPeriodeTest {
 
     @Test
     void testBerekenOmzet() {
-        AutoDealer testDealer = new AutoDealer("testDealer", "BC", "vancouver", "testaddress", "a1a1aa", "testemail@gmail.com", "2152534617");
+        AutoDealer testDealer = new AutoDealer("testDealer", "BC", "vancouver", "testaddress", "a1a1aa");
         Bestelling testBestelling = new Bestelling("1", testDealer, 40, 145, "5 mei", true, true);
         OmzetPost testOmzetPost = new OmzetPost("1 januari - 4 mei", "1", testBestelling);
 
@@ -22,7 +22,7 @@ class WinstPeriodeTest {
 
     @Test
     void testBerekenKosten() {
-        AutoDealer testDealer = new AutoDealer("testDealer", "BC", "vancouver", "testaddress", "a1a1as1", "testemail@gmail.com", "2152534617");
+        AutoDealer testDealer = new AutoDealer("testDealer", "BC", "vancouver", "testaddress", "a1a1aa");
         Bestelling testBestelling = new Bestelling("1", testDealer, 40, 145, "5 mei", true, true);
         OmzetPost testOmzetPost = new OmzetPost("1 januari - 4 mei", "1", testBestelling);
 
