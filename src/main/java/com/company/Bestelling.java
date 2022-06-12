@@ -21,22 +21,6 @@ public class Bestelling{
         this.bestellingBetaald = bestellingBetaald;
     }
 
-    public void printIsBestellingBetaald() {
-        if (bestellingBetaald == false) {
-            System.out.println("De bestelling van " + aantalLeads + " leads, geplaatst door " + autoDealer.getDealerNaam() + ", is nog niet betaald, begin dus nog niet met het uitvoeren van de bestelling");
-        } else if (bestellingBetaald == true) {
-            System.out.println("De bestelling van " + aantalLeads + " leads, geplaatst door " + autoDealer.getDealerNaam() + ", is betaald, begin met het uitvoeren van de bestelling");
-        }
-    }
-
-    public void printIsBestellingVoltooid() {
-        if (bestellingVoltooid == false) {
-            System.out.println("De bestelling van " + aantalLeads + " leads, geplaatst door " + autoDealer.getDealerNaam() + ", is nog niet voltooid, laat de advertentiecampagne nog draaien");
-        } else if (bestellingVoltooid == true) {
-            System.out.println("De bestelling van " + aantalLeads + " leads, geplaatst door " + autoDealer.getDealerNaam() + ", is voltooid, stop de advertentiecampagne");
-        }
-    }
-
     public Boolean getBestellingVoltooid() {
         return bestellingVoltooid;
     }
